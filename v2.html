@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Moment to Hire NRI Talent Is Now — GTX</title>
+  <meta name="description" content="US visa tightening + India's economic boom = your window to hire world-class NRI talent. 120,000+ pre-screened professionals. Move before your competitors do.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Urbanist',sans-serif;background:#0E0E0E;color:#FDFDFD;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+    :root{
+      --orange:#F25C05;
+      --orange-dark:#D44F04;
+      --orange-light:rgba(242,92,5,0.12);
+      --dark:#0E0E0E;
+      --surface:#181818;
+      --surface2:#222222;
+      --border:rgba(255,255,255,0.08);
+      --body:rgba(255,255,255,0.6);
+      --light:rgba(255,255,255,0.35);
+      --bg:#FDFDFD;
+      --radius:14px;
+    }
+
+    /* Progress bar */
+    #pb{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#F25C05,#FF8A40);width:0%;z-index:9999}
+
+    /* NAV */
+    #nav{position:fixed;top:3px;left:0;right:0;z-index:100;transition:background .35s,box-shadow .35s}
+    #nav.scrolled{background:rgba(14,14,14,0.95);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(255,255,255,0.06)}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between}
+    .nav-logo-img{height:36px;width:auto;display:block}
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;padding:13px 26px;border-radius:8px;font-weight:700;font-size:14px;font-family:'Urbanist',sans-serif;border:none;cursor:pointer;text-decoration:none;transition:background .2s,transform .2s,box-shadow .2s;white-space:nowrap}
+    .btn:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(242,92,5,0.4)}
+    .btn-lg{padding:16px 32px;font-size:16px;border-radius:10px}
+    .btn-ghost{background:transparent;color:rgba(255,255,255,.85);border:1.5px solid rgba(255,255,255,.45)}
+    .btn-ghost:hover{background:rgba(255,255,255,.05);color:#fff;border-color:rgba(255,255,255,.4)}
+
+
+    /* Gradient text */
+    .g-text{background:linear-gradient(135deg,#F25C05,#FF8A40);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+    /* Tag */
+    .tag{display:inline-flex;align-items:center;gap:7px;background:rgba(242,92,5,0.18);color:#FF8A40;padding:7px 16px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .dot{width:6px;height:6px;background:var(--orange);border-radius:50%;animation:blink 2s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+    /* HERO */
+    .hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden;background:#0E0E0E}
+    .hero-bg{position:absolute;inset:0;background:
+      radial-gradient(ellipse 900px 700px at 60% 40%,rgba(242,92,5,0.15),transparent 65%),
+      radial-gradient(ellipse 500px 500px at 5% 90%,rgba(242,92,5,0.07),transparent 60%);
+      pointer-events:none}
+    .hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
+    /* Glow orb */
+    .orb{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(242,92,5,0.18) 0%,transparent 70%);top:50%;right:-100px;transform:translateY(-50%);pointer-events:none;animation:pulse 6s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.8;transform:translateY(-50%) scale(1)}50%{opacity:1;transform:translateY(-50%) scale(1.08)}}
+
+    /* Typewriter */
+    #tw{display:inline-block;min-width:320px;color:var(--orange)}
+    .cursor{display:inline-block;width:3px;height:1em;background:var(--orange);vertical-align:middle;margin-left:4px;animation:blink-c .7s infinite}
+    @keyframes blink-c{0%,100%{opacity:1}50%{opacity:0}}
+
+    /* Marquee */
+    .marquee-wrap{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,black 10%,black 90%,transparent);mask-image:linear-gradient(90deg,transparent,black 10%,black 90%,transparent)}
+    .marquee-track{display:flex;align-items:center;gap:4rem;width:max-content;animation:scroll 32s linear infinite}
+    .marquee-track:hover{animation-play-state:paused}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    
+    
+    
+    
+    
+
+    /* Sections */
+    .section-light{background:#FDFDFD;color:#181818}
+    .section-dark{background:#111111}
+    .section-mid{background:#161616}
+
+    /* Proof cards */
+    .proof-card{background:#1C1C1C;border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);padding:2rem;transition:transform .3s,border-color .3s}
+    .proof-card:hover{transform:translateY(-4px);border-color:rgba(242,92,5,.3)}
+
+    /* Mid-page form */
+    .form-section{background:linear-gradient(135deg,#1A0A02,#130E0A);border-top:1px solid rgba(242,92,5,0.2);border-bottom:1px solid rgba(242,92,5,0.2)}
+    .form-wrap{background:#1C1C1C;border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:2.5rem;box-shadow:0 24px 64px rgba(0,0,0,0.5)}
+
+    /* Stat cards */
+    .stat-big{text-align:center}
+    .stat-big .num{font-size:clamp(2.5rem,5vw,4rem);font-weight:900;line-height:1}
+    .stat-big .label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--body);margin-top:8px}
+
+    /* Timeline */
+    .timeline-item{display:flex;gap:24px;align-items:flex-start;position:relative}
+    .timeline-item::before{content:'';position:absolute;left:20px;top:42px;bottom:-20px;width:2px;background:linear-gradient(#F25C05,transparent)}
+    .timeline-item:last-child::before{display:none}
+    .t-num{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#F25C05,#D44F04);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex-shrink:0;box-shadow:0 4px 14px rgba(242,92,5,.3)}
+
+    /* Reveal */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+    .reveal.in{opacity:1;transform:translateY(0)}
+    .reveal-left{opacity:0;transform:translateX(-30px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+    .reveal-left.in{opacity:1;transform:translateX(0)}
+    .reveal-right{opacity:0;transform:translateX(30px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+    .reveal-right.in{opacity:1;transform:translateX(0)}
+
+    /* Hero anim */
+    .hin{opacity:0;animation:fadeUp .8s ease forwards}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+    /* Form fields */
+    .field-label{display:block;font-size:13px;font-weight:700;color:rgba(255,255,255,.9);margin-bottom:7px}
+    .field{width:100%;padding:13px 15px;border:1.5px solid rgba(255,255,255,.12);border-radius:9px;font-size:14px;font-family:'Urbanist',sans-serif;color:#FDFDFD;background:rgba(255,255,255,.05);outline:none;transition:border-color .2s,box-shadow .2s}
+    .field:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(242,92,5,.12)}
+    .field::placeholder{color:rgba(255,255,255,.3)}
+    .field.err{border-color:var(--orange)}
+    select.field option{background:#222;color:#fff}
+
+    /* Badge */
+    .badge{display:inline-block;padding:4px 12px;border-radius:100px;background:rgba(242,92,5,.18);color:#FF8A40;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+
+    /* divider */
+    .section-div{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent)}
+
+    /* Urgency banner */
+    .urgency-bar{background:linear-gradient(90deg,var(--orange),#FF8A40);padding:12px 32px;text-align:center;font-size:13px;font-weight:700;color:#fff;letter-spacing:.03em}
+
+    /* Case study */
+    .cs-card{background:#1C1C1C;border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);overflow:hidden}
+    .cs-header{padding:1.5rem 2rem;border-bottom:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:12px}
+    .cs-body{padding:1.5rem 2rem 2rem}
+    .cs-metric{background:rgba(242,92,5,.1);border:1px solid rgba(242,92,5,.2);border-radius:10px;padding:.875rem;text-align:center}
+
+    /* FAQ */
+    .faq-item{border-bottom:1px solid rgba(255,255,255,.07)}
+    .faq-item summary{padding:18px 0;cursor:pointer;font-weight:700;font-size:15px;color:#FDFDFD;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{content:'+';font-size:22px;color:var(--orange);font-weight:300;flex-shrink:0;transition:transform .3s}
+    .faq-item[open] summary::after{content:'−'}
+    .faq-item p{padding:0 0 18px;color:rgba(255,255,255,.55);font-size:14px;line-height:1.75}
+
+    /* Success */
+    #success-msg{display:none;text-align:center;padding:2rem}
+
+    @media(prefers-reduced-motion:reduce){.reveal,.reveal-left,.reveal-right,.hin,.orb,*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+    @media(max-width:900px){.hero>div{flex-direction:column!important}.hin[style*="width:360px"]{display:none!important}}
+    @media(max-width:768px){.nav-inner{padding:14px 20px}.hero{padding:100px 0 60px}#tw{min-width:200px}}
+    @media(max-width:640px){.two-col{grid-template-columns:1fr!important}.urgency-bar{padding:8px 16px;font-size:11.5px;letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#nav{top:34px}#cta-form>div>div:first-child{grid-template-columns:1fr!important}.cs-body>div{grid-template-columns:repeat(2,1fr)!important}}
+      /* Logo bar */
+    .logo-img{height:44px;width:auto;display:block;flex-shrink:0;filter:grayscale(1) opacity(.6);transition:filter .3s;cursor:default}
+    .logo-img:hover{filter:grayscale(0) opacity(1)}
+    .logo-img-dark{height:42px;width:auto;display:block;flex-shrink:0;filter:brightness(0) invert(1) opacity(.7);transition:filter .3s;cursor:default}
+    .logo-img-dark:hover{filter:brightness(0) invert(1) opacity(1)}
+  </style>
+</head>
+<body>
+
+<!-- Progress bar -->
+<div id="pb"></div>
+
+<!-- Urgency banner -->
+<div class="urgency-bar">
+  <span class="dot" style="display:inline-block;margin-right:8px;margin-bottom:-1px"></span>
+  The window is open right now — H-1B fees just hit $100K. NRIs are moving fast. So are your competitors.
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#"><img src="https://globaltalex.com/icon/GTX_Logo%20160px%20x%2056px.svg" alt="GTX" class="nav-logo-img"></a>
+    <a href="#form" class="btn" style="font-size:13px;padding:11px 22px;">Tell us who you need →</a>
+  </div>
+</nav>
+
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+  <div class="orb"></div>
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;position:relative;width:100%;display:flex;align-items:center;gap:64px">
+  <div style="flex:1;min-width:0">
+
+    <div class="tag hin" style="animation-delay:.05s;margin-bottom:24px">
+      <span class="dot"></span> Back2Bharat — Reverse Brain Drain
+    </div>
+
+    <h1 class="hin" style="font-size:clamp(2.6rem,5vw,4.4rem);font-weight:900;color:#fff;line-height:1.1;letter-spacing:-0.03em;max-width:900px;animation-delay:.18s">
+      Your next<br>
+      <span id="tw"></span><span class="cursor"></span>
+      <br><span style="color:rgba(255,255,255,.75)">is already on their way home.</span>
+    </h1>
+
+    <p class="hin" style="font-size:clamp(1rem,1.8vw,1.18rem);color:rgba(255,255,255,.75);line-height:1.75;max-width:540px;margin:28px 0 40px;animation-delay:.34s">
+      US immigration pressure + India's <strong style="color:#fff">$3.7T GDP momentum</strong> has created a once-in-a-generation talent window. GTX gives you first access — before it closes.
+    </p>
+
+    <div class="hin" style="animation-delay:.48s">
+      <div style="display:flex;flex-wrap:wrap;gap:16px">
+        <a href="#form" class="btn btn-lg">Tell us who you need — it's free →</a>
+        <a href="#proof" class="btn btn-ghost btn-lg">See who's already hiring</a>
+      </div>
+      <p style="margin-top:12px;font-size:12px;color:rgba(255,255,255,.45);font-weight:600;letter-spacing:.04em">Trusted by 60+ companies &nbsp;·&nbsp; No commitment required</p>
+    </div>
+
+    <!-- Stat strip -->
+    <div class="hin" style="animation-delay:.62s;margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:14px;overflow:hidden;max-width:700px">
+      <div style="padding:20px;text-align:center;border-right:1px solid rgba(255,255,255,.07)">
+        <div style="font-size:2.2rem;font-weight:900;color:#fff" class="count" data-to="120" data-suffix="K+">0</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.55);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-top:4px">Candidates</div>
+      </div>
+      <div style="padding:20px;text-align:center;border-right:1px solid rgba(255,255,255,.07)">
+        <div style="font-size:2.2rem;font-weight:900;color:#fff" class="count" data-to="42" data-suffix="+">0</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.55);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-top:4px">Countries</div>
+      </div>
+      <div style="padding:20px;text-align:center;border-right:1px solid rgba(255,255,255,.07)">
+        <div style="font-size:2.2rem;font-weight:900;color:#fff" class="count" data-to="1200" data-suffix="+">0</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.55);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-top:4px">Hires made</div>
+      </div>
+      <div style="padding:20px;text-align:center">
+        <div style="font-size:2.2rem;font-weight:900;color:#fff" class="count" data-to="60" data-suffix="+">0</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.55);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-top:4px">Companies</div>
+      </div>
+    </div>
+
+    <!-- Logo scroll -->
+    <div class="hin" style="animation-delay:.76s;margin-top:48px">
+      <p style="font-size:11px;color:rgba(255,255,255,.5);font-weight:700;text-transform:uppercase;letter-spacing:.14em;margin-bottom:20px">Companies already hiring through GTX</p>
+            <div class="marquee-wrap">
+        <div class="marquee-track">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/amazon.svg" alt="Amazon">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/shell.svg" alt="Shell">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/qualcomm.svg" alt="Qualcomm">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/walmart.svg" alt="Walmart">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/google.svg" alt="Google">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoft.svg" alt="Microsoft">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/oracle.svg" alt="Oracle">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/infosys.svg" alt="Infosys">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wipro.svg" alt="Wipro">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/phonepe.svg" alt="PhonePe">
+          <svg xmlns="http://www.w3.org/2000/svg" class="logo-img-dark" viewBox="0 0 28 28" style="height:44px;width:auto;flex-shrink:0" aria-label="Freshworks"><path d="M.16 15.68c.4 2.96 1.841 5.6 3.842 7.6l4.642-4.64c0-4.72 2.482-9.28 6.804-11.84L.16 15.68z" fill="#9B65C3"/><path d="M8.644 18.64c-2.32 0-4.642-.56-6.803-1.84-.56-.32-1.12-.72-1.68-1.12.4 2.96 1.84 5.6 3.841 7.6l4.642-4.64z" fill="#9B65C3"/><path d="M8.644 18.64l-4.642 4.64c2.001 2 4.642 3.44 7.604 3.84l8.884-15.28c-2.561 4.32-7.123 6.8-11.846 6.8z" fill="#BE63C5"/><path d="M10.485 25.44c-1.28-2.16-1.84-4.48-1.84-6.8l-4.643 4.64c2.001 2 4.642 3.44 7.604 3.84-.4-.48-.8-1.04-1.12-1.68z" fill="#BF63C6"/><path d="M26.013.72L15.448 6.8c-4.402 2.56-9.525 2.32-13.607 0C.64 8.8 0 11.12 0 13.68c0 .72.08 1.36.16 2 .56.4 1.12.8 1.68 1.12 2.162 1.28 4.483 1.84 6.804 1.84l17.61-17.6c-.08-.16-.161-.24-.241-.32z" fill="#3278B1"/><path d="M1.841 16.8c2.161 1.28 4.482 1.84 6.803 1.84 0-4.72 2.482-9.28 6.804-11.84L.16 15.68c.48.4 1.04.8 1.681 1.12z" fill="#3278B2"/><path d="M1.84 6.8C.64 8.8 0 11.12 0 13.68c0 .72.08 1.36.16 2L15.448 6.8c-4.322 2.56-9.525 2.4-13.607 0z" fill="#45A4EC"/><path d="M26.253 1.04c-.08-.08-.16-.16-.32-.24-.16-.08-.24-.24-.4-.32-.48-.32-1.12-.48-1.681-.48H13.607C8.564 0 4.162 2.72 1.76 6.8c4.082 2.32 9.285 2.56 13.607 0-4.402 2.56-6.804 7.12-6.804 11.84 4.723 0 9.285-2.48 11.846-6.8l6.083-10.56c0-.08-.08-.16-.24-.24z" fill="#19BB7D"/><path d="M15.448 6.8L26.013.72c-.16-.08-.24-.24-.4-.32L1.84 6.8c4.082 2.4 9.285 2.56 13.607 0z" fill="#08C7FB"/><path d="M23.852 0H13.607C8.564 0 4.162 2.72 1.76 6.8L25.533.4c-.48-.24-1.04-.4-1.681-.4z" fill="#59F2F6"/><path d="M20.49 11.84l6.083-10.56c-.08-.08-.16-.16-.24-.32L8.724 18.56c0 2.32.56 4.64 1.841 6.8.32.56.72 1.12 1.12 1.68.641.08 1.361.16 2.002.16 2.481 0 4.802-.64 6.803-1.84-2.401-4-2.561-9.2 0-13.52z" fill="#DA3757"/><path d="M8.644 18.64c0 2.32.56 4.64 1.841 6.8.32.56.72 1.12 1.12 1.68l8.885-15.28c-2.561 4.32-7.123 6.8-11.846 6.8z" fill="#D33C4E"/><path d="M20.49 11.84l-8.884 15.28c.64.08 1.36.16 2 .16 2.482 0 4.803-.64 6.804-1.84-2.32-4.08-2.481-9.28.08-13.6z" fill="#EE5A24"/><path d="M26.814 1.68c-.08-.16-.16-.32-.32-.4-.08-.08-.16-.16-.24-.32-.08-.08-.16-.16-.321-.24L15.368 6.8c-4.402 2.56-6.804 7.12-6.804 11.84 4.723 0 9.285-2.48 11.846-6.8-2.561 4.4-2.32 9.52 0 13.6 4.082-2.32 6.804-6.8 6.804-11.84V3.44c.08-.64-.08-1.2-.4-1.76z" fill="#8BDF55"/><path d="M26.013.72L15.448 6.8c-4.402 2.56-6.804 7.12-6.804 11.84l17.61-17.6c-.08-.16-.161-.24-.241-.32z" fill="#25C16F"/><path d="M8.644 18.64c4.723 0 9.285-2.48 11.846-6.8l6.083-10.56c-.08-.08-.16-.16-.24-.32L8.644 18.64z" fill="#8BDF55"/><path d="M26.573 1.28L20.49 11.84c-2.561 4.4-2.32 9.52 0 13.6l6.403-23.76c-.16-.08-.24-.24-.32-.4z" fill="#FB0"/><path d="M20.49 25.44c4.082-2.32 6.804-6.8 6.804-11.84V3.44c0-.64-.16-1.2-.48-1.68L20.49 25.44z" fill="#FFA800"/></svg>
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/amazon.svg" alt="Amazon">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/shell.svg" alt="Shell">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/qualcomm.svg" alt="Qualcomm">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/walmart.svg" alt="Walmart">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/google.svg" alt="Google">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoft.svg" alt="Microsoft">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/oracle.svg" alt="Oracle">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/infosys.svg" alt="Infosys">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wipro.svg" alt="Wipro">
+          <img class="logo-img-dark" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/phonepe.svg" alt="PhonePe">
+          <svg xmlns="http://www.w3.org/2000/svg" class="logo-img-dark" viewBox="0 0 28 28" style="height:44px;width:auto;flex-shrink:0" aria-label="Freshworks"><path d="M.16 15.68c.4 2.96 1.841 5.6 3.842 7.6l4.642-4.64c0-4.72 2.482-9.28 6.804-11.84L.16 15.68z" fill="#9B65C3"/><path d="M8.644 18.64c-2.32 0-4.642-.56-6.803-1.84-.56-.32-1.12-.72-1.68-1.12.4 2.96 1.84 5.6 3.841 7.6l4.642-4.64z" fill="#9B65C3"/><path d="M8.644 18.64l-4.642 4.64c2.001 2 4.642 3.44 7.604 3.84l8.884-15.28c-2.561 4.32-7.123 6.8-11.846 6.8z" fill="#BE63C5"/><path d="M10.485 25.44c-1.28-2.16-1.84-4.48-1.84-6.8l-4.643 4.64c2.001 2 4.642 3.44 7.604 3.84-.4-.48-.8-1.04-1.12-1.68z" fill="#BF63C6"/><path d="M26.013.72L15.448 6.8c-4.402 2.56-9.525 2.32-13.607 0C.64 8.8 0 11.12 0 13.68c0 .72.08 1.36.16 2 .56.4 1.12.8 1.68 1.12 2.162 1.28 4.483 1.84 6.804 1.84l17.61-17.6c-.08-.16-.161-.24-.241-.32z" fill="#3278B1"/><path d="M1.841 16.8c2.161 1.28 4.482 1.84 6.803 1.84 0-4.72 2.482-9.28 6.804-11.84L.16 15.68c.48.4 1.04.8 1.681 1.12z" fill="#3278B2"/><path d="M1.84 6.8C.64 8.8 0 11.12 0 13.68c0 .72.08 1.36.16 2L15.448 6.8c-4.322 2.56-9.525 2.4-13.607 0z" fill="#45A4EC"/><path d="M26.253 1.04c-.08-.08-.16-.16-.32-.24-.16-.08-.24-.24-.4-.32-.48-.32-1.12-.48-1.681-.48H13.607C8.564 0 4.162 2.72 1.76 6.8c4.082 2.32 9.285 2.56 13.607 0-4.402 2.56-6.804 7.12-6.804 11.84 4.723 0 9.285-2.48 11.846-6.8l6.083-10.56c0-.08-.08-.16-.24-.24z" fill="#19BB7D"/><path d="M15.448 6.8L26.013.72c-.16-.08-.24-.24-.4-.32L1.84 6.8c4.082 2.4 9.285 2.56 13.607 0z" fill="#08C7FB"/><path d="M23.852 0H13.607C8.564 0 4.162 2.72 1.76 6.8L25.533.4c-.48-.24-1.04-.4-1.681-.4z" fill="#59F2F6"/><path d="M20.49 11.84l6.083-10.56c-.08-.08-.16-.16-.24-.32L8.724 18.56c0 2.32.56 4.64 1.841 6.8.32.56.72 1.12 1.12 1.68.641.08 1.361.16 2.002.16 2.481 0 4.802-.64 6.803-1.84-2.401-4-2.561-9.2 0-13.52z" fill="#DA3757"/><path d="M8.644 18.64c0 2.32.56 4.64 1.841 6.8.32.56.72 1.12 1.12 1.68l8.885-15.28c-2.561 4.32-7.123 6.8-11.846 6.8z" fill="#D33C4E"/><path d="M20.49 11.84l-8.884 15.28c.64.08 1.36.16 2 .16 2.482 0 4.803-.64 6.804-1.84-2.32-4.08-2.481-9.28.08-13.6z" fill="#EE5A24"/><path d="M26.814 1.68c-.08-.16-.16-.32-.32-.4-.08-.08-.16-.16-.24-.32-.08-.08-.16-.16-.321-.24L15.368 6.8c-4.402 2.56-6.804 7.12-6.804 11.84 4.723 0 9.285-2.48 11.846-6.8-2.561 4.4-2.32 9.52 0 13.6 4.082-2.32 6.804-6.8 6.804-11.84V3.44c.08-.64-.08-1.2-.4-1.76z" fill="#8BDF55"/><path d="M26.013.72L15.448 6.8c-4.402 2.56-6.804 7.12-6.804 11.84l17.61-17.6c-.08-.16-.161-.24-.241-.32z" fill="#25C16F"/><path d="M8.644 18.64c4.723 0 9.285-2.48 11.846-6.8l6.083-10.56c-.08-.08-.16-.16-.24-.32L8.644 18.64z" fill="#8BDF55"/><path d="M26.573 1.28L20.49 11.84c-2.561 4.4-2.32 9.52 0 13.6l6.403-23.76c-.16-.08-.24-.24-.32-.4z" fill="#FB0"/><path d="M20.49 25.44c4.082-2.32 6.804-6.8 6.804-11.84V3.44c0-.64-.16-1.2-.48-1.68L20.49 25.44z" fill="#FFA800"/></svg>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-left -->
+
+  <!-- Hero right: social proof -->
+  <div class="hin" style="flex-shrink:0;width:360px;display:flex;flex-direction:column;gap:16px;animation-delay:.5s">
+    <div style="background:#1C1C1C;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#F25C05,#D44F04);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;flex-shrink:0">PS</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:14px;font-weight:700;color:#fff">Priya Sharma</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.5)">Sr. Product Manager · ex-Google</div>
+        </div>
+        <div style="background:rgba(74,222,128,.15);color:#4ade80;font-size:10px;font-weight:700;padding:4px 10px;border-radius:100px;border:1px solid rgba(74,222,128,.25);white-space:nowrap;flex-shrink:0">Available</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px">
+        <span style="background:rgba(255,255,255,.07);color:rgba(255,255,255,.65);font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px">8 yrs exp</span>
+        <span style="background:rgba(255,255,255,.07);color:rgba(255,255,255,.65);font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px">SF → Mumbai</span>
+        <span style="background:rgba(255,255,255,.07);color:rgba(255,255,255,.65);font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px">Fintech</span>
+      </div>
+      <div style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);font-size:12px;color:rgba(255,255,255,.4)">
+        <span style="color:#4ade80;font-weight:700">✓ Placed</span> at Razorpay &nbsp;·&nbsp; 4 days ago
+      </div>
+    </div>
+    <div style="background:#1C1C1C;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px 20px;display:flex;align-items:center;gap:14px">
+      <div style="width:40px;height:40px;border-radius:12px;background:rgba(242,92,5,.18);border:1px solid rgba(242,92,5,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F25C05" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#fff">340 NRIs active this week</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.45);margin-top:2px">Avg. first shortlist within 72 hrs</div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- ══ WHY NOW — The numbers don't lie ══ -->
+<section id="proof" style="padding:80px 0;background:#111">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px">
+    <div class="reveal" style="text-align:center;margin-bottom:56px">
+      <div class="badge" style="margin-bottom:18px">The Numbers</div>
+      <h2 style="font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:900;letter-spacing:-1px;color:#fff;margin-bottom:14px">
+        The talent window that won't<br>stay open forever
+      </h2>
+      <p style="font-size:16px;color:rgba(255,255,255,.5);line-height:1.7;max-width:560px;margin:0 auto">Three macro forces have aligned. Companies that move now will hire the best. The rest will compete for what's left.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+      <div class="proof-card reveal" style="transition-delay:.05s">
+        <div style="font-size:3.2rem;font-weight:900;line-height:1" class="g-text count" data-to="60" data-suffix="%">0</div>
+        <div style="font-weight:800;font-size:18px;color:#fff;margin:10px 0 6px">Your talent pool just got 60% bigger</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.4);line-height:1.65">Senior NRI professionals with 10+ years at global firms — who weren't looking at India last year — are now actively pursuing roles. The best ones are moving fast.</p>
+      </div>
+      <div class="proof-card reveal" style="transition-delay:.12s">
+        <div style="font-size:3.2rem;font-weight:900;line-height:1" class="g-text count" data-to="100" data-prefix="$" data-suffix="K">0</div>
+        <div style="font-weight:800;font-size:18px;color:#fff;margin:10px 0 6px">The window opened this year</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.4);line-height:1.65">NRI professionals at Google, Shell, and Qualcomm are now weighing India seriously for the first time. Your window to hire them before they're all placed is 12–18 months.</p>
+      </div>
+      <div class="proof-card reveal" style="transition-delay:.2s">
+        <div style="font-size:3.2rem;font-weight:900;line-height:1" class="g-text count" data-to="3" data-suffix=".7T">$</div>
+        <div style="font-weight:800;font-size:18px;color:#fff;margin:10px 0 6px">India's GDP by 2030</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.4);line-height:1.65">Third-largest economy by 2030. India roles are becoming globally prestigious again.</p>
+      </div>
+      <div class="proof-card reveal" style="transition-delay:.28s">
+        <div style="font-size:3.2rem;font-weight:900;line-height:1" class="g-text count" data-to="42" data-suffix="+">0</div>
+        <div style="font-weight:800;font-size:18px;color:#fff;margin:10px 0 6px">Countries in GTX network</div>
+        <p style="font-size:13px;color:rgba(255,255,255,.4);line-height:1.65">Pre-screened candidates from Silicon Valley, London, Dubai, Singapore and beyond</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MID-PAGE FORM ══ -->
+<section id="form" class="form-section" style="padding:80px 0">
+  <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start" class="two-col">
+
+      <!-- Left: Copy -->
+      <div class="reveal-left">
+        <div class="badge" style="margin-bottom:20px">Act Before Your Competitors Do</div>
+        <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:900;letter-spacing:-1px;color:#fff;line-height:1.1;margin-bottom:20px">
+          Tell us who you're looking for.<br><span class="g-text">We'll find them.</span>
+        </h2>
+        <p style="font-size:15px;color:rgba(255,255,255,.55);line-height:1.75;margin-bottom:32px">Most companies wait too long. When you're ready, the best candidates are already placed. Tell us your need today — our talent scouts start searching immediately.</p>
+
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;align-items:flex-start;gap:12px">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(242,92,5,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#F25C05" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.5">No upfront cost. You pay only on a successful hire.</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:12px">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(242,92,5,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#F25C05" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.5">First shortlist within 72 hours of your brief</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:12px">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(242,92,5,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#F25C05" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.5">Dedicated talent consultant — not a ticket queue</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:12px">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(242,92,5,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#F25C05" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.5">100% NRI-specific — no generic job board overlap</span>
+          </div>
+        </div>
+
+        <!-- Social proof -->
+        <div style="margin-top:32px;padding:16px;background:rgba(242,92,5,0.1);border:1px solid rgba(242,92,5,.2);border-radius:12px">
+          <div style="font-size:13px;color:rgba(255,255,255,.9);font-style:italic;line-height:1.6;margin-bottom:10px">"Within 3 weeks of briefing GTX, we had 12 qualified FPGA engineers on our shortlist. We hired 4."</div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#F25C05,#D44F04);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800">CA</div>
+            <div>
+              <div style="font-size:12px;font-weight:700;color:#fff">Talent Acquisition Lead</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4)">Collins Aerospace</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="reveal-right">
+        <div class="form-wrap">
+          <div id="success-msg">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(242,92,5,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 20px">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F25C05" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 style="font-size:22px;font-weight:800;color:#fff;margin-bottom:10px">We're on it.</h3>
+            <p style="font-size:14px;color:rgba(255,255,255,.55);line-height:1.65">Your dedicated talent consultant will reach out within one business day with a plan for your role.</p>
+          </div>
+          <form id="cta-form" onsubmit="handleSubmit(event)">
+            <h3 style="font-size:18px;font-weight:800;color:#fff;margin-bottom:6px">Find your next hire</h3>
+            <p style="font-size:13px;color:rgba(255,255,255,.4);margin-bottom:24px">Free consultation — no commitment required</p>
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                <div>
+                  <label class="field-label">First name</label>
+                  <input class="field" type="text" id="fname" placeholder="Arjun">
+                </div>
+                <div>
+                  <label class="field-label">Last name</label>
+                  <input class="field" type="text" id="lname" placeholder="Mehta">
+                </div>
+              </div>
+              <div>
+                <label class="field-label">Work email</label>
+                <input class="field" type="email" id="email" placeholder="arjun@company.com">
+              </div>
+              <div>
+                <label class="field-label">Company</label>
+                <input class="field" type="text" id="company" placeholder="Your company name">
+              </div>
+              <div>
+                <label class="field-label">What role are you hiring for?</label>
+                <input class="field" type="text" id="role" placeholder="e.g. Senior ML Engineer, FPGA Lead">
+              </div>
+              <div>
+                <label class="field-label">How soon do you need them?</label>
+                <select class="field" id="timeline">
+                  <option value="">Select timeline</option>
+                  <option>Within 4 weeks</option>
+                  <option>1–3 months</option>
+                  <option>3–6 months</option>
+                  <option>Building a pipeline</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-lg" style="width:100%;justify-content:center;margin-top:4px">
+                Start the search — it's free
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <p style="font-size:11px;color:rgba(255,255,255,.25);text-align:center;line-height:1.5">No spam. No commitment. Your consultant will reach out within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CASE STUDIES ══ -->
+<section style="padding:80px 0;background:#111">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px">
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <div class="badge" style="margin-bottom:18px">Proof It Works</div>
+      <h2 style="font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:900;letter-spacing:-1px;color:#fff;margin-bottom:14px">Real hires. Real companies. Right now.</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      <div class="cs-card reveal" style="transition-delay:.05s">
+        <div class="cs-header">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(242,92,5,.15);display:flex;align-items:center;justify-content:center">
+            <img src="https://cdn.simpleicons.org/shell/F25C05" style="height:20px;width:auto" onerror="this.style.display='none'" alt="">
+          </div>
+          <div>
+            <div style="font-weight:800;font-size:15px;color:#fff">Shell</div>
+            <div style="font-size:12px;color:rgba(255,255,255,.4)">Energy & Resources — Bangalore</div>
+          </div>
+        </div>
+        <div class="cs-body">
+          <p style="font-size:14px;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:20px">"We needed senior engineers fast for our Bangalore R&D center. GTX gave us access to NRI talent from the US and Europe with deep domain expertise we couldn't find locally."</p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">10</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Events run</div>
+            </div>
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">500+</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Candidates</div>
+            </div>
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">50</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Hired</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-card reveal" style="transition-delay:.15s">
+        <div class="cs-header">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(242,92,5,.15);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--orange)">CA</div>
+          <div>
+            <div style="font-weight:800;font-size:15px;color:#fff">Collins Aerospace</div>
+            <div style="font-size:12px;color:rgba(255,255,255,.4)">Aerospace & Defense — Hyderabad</div>
+          </div>
+        </div>
+        <div class="cs-body">
+          <p style="font-size:14px;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:20px">"Finding FPGA engineers with international experience in India was near-impossible. GTX sourced 20+ qualified candidates in under 3 weeks. We couldn't believe the quality."</p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">20+</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Sourced</div>
+            </div>
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">3wk</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Timeline</div>
+            </div>
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">FPGA</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Specialty</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-card reveal" style="transition-delay:.25s">
+        <div class="cs-header">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(242,92,5,.15);display:flex;align-items:center;justify-content:center">
+            <img src="https://cdn.simpleicons.org/qualcomm/F25C05" style="height:20px;width:auto" onerror="this.style.display='none'" alt="">
+          </div>
+          <div>
+            <div style="font-weight:800;font-size:15px;color:#fff">Qualcomm</div>
+            <div style="font-size:12px;color:rgba(255,255,255,.4)">Semiconductors — Chennai</div>
+          </div>
+        </div>
+        <div class="cs-body">
+          <p style="font-size:14px;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:20px">"We partnered with GTX to run targeted NRI talent events across the US. The calibre of candidates we met — people with 10+ years at companies like Intel and Broadcom — was exceptional."</p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">3</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Events</div>
+            </div>
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">180+</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Candidates</div>
+            </div>
+            <div class="cs-metric">
+              <div style="font-size:1.6rem;font-weight:900" class="g-text">92%</div>
+              <div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Offer rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section style="padding:80px 0;background:#0E0E0E">
+  <div style="max-width:900px;margin:0 auto;padding:0 32px">
+    <div class="reveal" style="text-align:center;margin-bottom:56px">
+      <div class="badge" style="margin-bottom:18px">Your journey to a hire</div>
+      <h2 style="font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:900;letter-spacing:-1px;color:#fff">Four steps from brief to hire</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <div class="timeline-item reveal" style="transition-delay:.05s">
+        <div class="t-num">1</div>
+        <div>
+          <h3 style="font-weight:800;font-size:17px;color:#fff;margin-bottom:6px">You tell us what you need</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,.45);line-height:1.7">Role, seniority, skills, location preference. Takes 5 minutes. Your dedicated consultant handles everything from here.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" style="transition-delay:.12s">
+        <div class="t-num">2</div>
+        <div>
+          <h3 style="font-weight:800;font-size:17px;color:#fff;margin-bottom:6px">We search our 120K+ candidate pool</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,.45);line-height:1.7">Active NRI professionals across 42 countries, pre-screened for intent, background, and fit. First shortlist in 72 hours.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" style="transition-delay:.2s">
+        <div class="t-num">3</div>
+        <div>
+          <h3 style="font-weight:800;font-size:17px;color:#fff;margin-bottom:6px">You meet the shortlist</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,.45);line-height:1.7">Structured interviews, virtual or in-person. We handle logistics, scheduling, and candidate prep on your behalf.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" style="transition-delay:.28s">
+        <div class="t-num">4</div>
+        <div>
+          <h3 style="font-weight:800;font-size:17px;color:#fff;margin-bottom:6px">Hire and onboard with confidence</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,.45);line-height:1.7">Offer negotiation, relocation guidance, and 90-day onboarding check-ins. We're here until your hire is thriving.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section style="padding:80px 0;background:#111">
+  <div style="max-width:740px;margin:0 auto;padding:0 32px">
+    <div class="reveal" style="text-align:center;margin-bottom:48px">
+      <h2 style="font-size:clamp(1.8rem,3vw,2.4rem);font-weight:900;letter-spacing:-1px;color:#fff">Questions we get asked</h2>
+    </div>
+    <div>
+      <details class="faq-item">
+        <summary>What types of roles does GTX specialise in?</summary>
+        <p>We focus on senior and specialist roles — engineering (software, hardware, embedded), product, finance, operations, and life sciences. Roles where the global NRI talent pool significantly outperforms the local market.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How is GTX different from a regular recruitment agency?</summary>
+        <p>We are exclusively NRI-focused. Our entire platform, events, and sourcing engine is built around NRI professionals who want to return to India. You won't find this talent on Naukri or LinkedIn India searches — these are people actively engaged with GTX.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does it cost?</summary>
+        <p>The initial consultation and talent briefing are completely free. GTX charges a placement fee only on a successful hire. We are outcome-aligned — we succeed when you make a great hire.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How quickly can I see candidates?</summary>
+        <p>Most employers receive their first shortlist within 72 hours of submitting a brief. For niche or senior roles, it may take up to 5 business days to curate the right profiles.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do NRI candidates need relocation support?</summary>
+        <p>GTX provides relocation advisory resources and connects candidates with our partner network for housing, banking, and school admissions — reducing friction for both you and the hire.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BOTTOM CTA ══ -->
+<section style="padding:80px 0;background:linear-gradient(135deg,#1A0A02,#0E0E0E)">
+  <div style="max-width:700px;margin:0 auto;padding:0 32px;text-align:center" class="reveal">
+    <div class="badge" style="margin-bottom:24px">Don't wait</div>
+    <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:900;letter-spacing:-1.5px;color:#fff;line-height:1.1;margin-bottom:18px">
+      Your competitors are already<br>looking at this talent pool.
+    </h2>
+    <p style="font-size:16px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:36px">Every week you wait, the best candidates get closer to accepting other offers. The brief takes 5 minutes.</p>
+    <a href="#form" class="btn btn-lg" style="box-shadow:0 8px 32px rgba(242,92,5,.4)">
+      Tell us who you're looking for →
+    </a>
+    <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,.3)">Free. No commitment. First shortlist within 72 hours.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#0A0A0A;padding:28px 32px;border-top:1px solid rgba(255,255,255,.05)">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <img src="https://globaltalex.com/icon/GTX_Logo%20160px%20x%2056px.svg" alt="GTX" height="32">
+    <span style="font-size:13px;color:rgba(255,255,255,.25)">© 2026 Global Talent Exchange. Connecting India to the world's best NRI talent.</span>
+  </div>
+</footer>
+
+<script>
+  // Typewriter
+  const roles=['Senior ML Engineer','FPGA Specialist','Product Leader','CFO','Data Scientist','Embedded Systems Lead','VP of Engineering','Biotech Researcher'];
+  let ri=0,ci=0,del=false;
+  const tw=document.getElementById('tw');
+  function type(){
+    const word=roles[ri];
+    if(!del){
+      tw.textContent=word.slice(0,++ci);
+      if(ci===word.length){del=true;setTimeout(type,1600);return}
+    } else {
+      tw.textContent=word.slice(0,--ci);
+      if(ci===0){del=false;ri=(ri+1)%roles.length;setTimeout(type,300);return}
+    }
+    setTimeout(type,del?42:68);
+  }
+  type();
+
+  // Progress bar
+  const pb=document.getElementById('pb');
+  window.addEventListener('scroll',()=>{
+    const s=window.scrollY,h=document.body.scrollHeight-window.innerHeight;
+    pb.style.width=(s/h*100)+'%';
+    document.getElementById('nav').classList.toggle('scrolled',s>50);
+  });
+
+  // Counters
+  function animateCount(el){
+    const to=+el.dataset.to,prefix=el.dataset.prefix||'',suffix=el.dataset.suffix||'';
+    const dur=1400,start=performance.now();
+    function step(now){
+      const p=Math.min((now-start)/dur,1);
+      const ease=1-Math.pow(1-p,3);
+      el.textContent=prefix+Math.round(ease*to)+suffix;
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  const co=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting&&!e.target.dataset.done){e.target.dataset.done=1;animateCount(e.target)}})
+  },{threshold:.5});
+  document.querySelectorAll('.count').forEach(el=>co.observe(el));
+
+  // Reveal
+  const ro=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})
+  },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>ro.observe(el));
+
+  // Form
+  function handleSubmit(e){
+    e.preventDefault();
+    let ok=true;
+    ['fname','lname','email','company','role'].forEach(id=>{
+      const f=document.getElementById(id);
+      if(!f.value.trim()){f.classList.add('err');ok=false}
+      else f.classList.remove('err');
+    });
+    const em=document.getElementById('email');
+    if(em.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)){em.classList.add('err');ok=false}
+    if(!ok){document.querySelector('.field.err').focus();return}
+    document.getElementById('cta-form').style.display='none';
+    document.getElementById('success-msg').style.display='block';
+    window.scrollTo({top:document.getElementById('form').offsetTop-80,behavior:'smooth'});
+  }
+</script>
+</body>
+</html>
